@@ -8,6 +8,8 @@ import AllCollages from "../Components/AllCollages";
 import Admission from "../Components/Admission";
 import MyCollages from "../Components/MyCollages";
 import ErrorPage from "../Components/ErrorPage";
+import Login from "../Login/Login";
+import SignUp from "../SignUp/SignUp";
 
  export const router = createBrowserRouter([
     {
@@ -29,6 +31,14 @@ import ErrorPage from "../Components/ErrorPage";
         {
             path:"myCollages",
             element:<MyCollages></MyCollages> 
+        },
+        {
+          path:"login",
+          element:<Login></Login>
+        },
+        {
+          path:"signUp",
+          element:<SignUp></SignUp>
         },
         
       ]

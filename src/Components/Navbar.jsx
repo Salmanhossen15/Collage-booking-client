@@ -1,7 +1,15 @@
+// import { useContext } from "react";
 import { Link } from "react-router-dom";
+// import { AuthContext } from "../provider/AuthProvider";
 
 
 const Navbar = () => {
+    // const { logOut } = useContext(AuthContext);
+    // const handleLogOut = () => {
+    //     logOut()
+    //         .then(() => { })
+    //         .catch(error => console.log(error));
+    // }
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -10,10 +18,10 @@ const Navbar = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/allCollages">Collages</Link></li>
-                    <li><Link to="/admission">Admission</Link></li>
-                    <li><Link to="/myCollages">My Collage</Link></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/allCollages">Collages</Link></li>
+                        <li><Link to="/admission">Admission</Link></li>
+                        <li><Link to="/myCollages">My Collage</Link></li>
                     </ul>
                 </div>
                 <a className="btn btn-ghost normal-case text-xl">FindCollage</a>
@@ -27,7 +35,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Login</a>
+            <li><Link to="/login">Login</Link></li>
             </div>
         </div>
     );
