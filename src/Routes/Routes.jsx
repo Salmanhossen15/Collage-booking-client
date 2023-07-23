@@ -12,6 +12,7 @@ import Login from "../Login/Login";
 import SignUp from "../SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
 import Details from "../Components/Details";
+import Profile from "../Components/Profile";
 
  export const router = createBrowserRouter([
     {
@@ -45,6 +46,10 @@ import Details from "../Components/Details";
         {
           path:"details/:id",
           element:<Details></Details>
+        },
+        {
+          path:"profile",
+          element:<Profile></Profile>
         }
         
       ]

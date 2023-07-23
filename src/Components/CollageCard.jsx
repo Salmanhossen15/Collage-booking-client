@@ -1,58 +1,29 @@
+import { useEffect, useState } from "react";
+import SingleCollageCard from "./SingleCollageCard";
 
 
 const CollageCard = () => {
+
+    const [collage, setCollage] = useState([]);
+
+    useEffect(() => {
+        fetch('https://collage-bookings-server.vercel.app/popularCollage')
+            .then((res) => res.json())
+            .then((data) => setCollage(data));
+    }, []);
+
+    console.log(collage);
     return (
         <div className="py-10">
             
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="border p-6 rounded-2xl  shadow-lg bg-cyan-300">
-                    <div>
-                        <img className="w-56 h-56 rounded-xl border-4 mx-auto" src="https://images.pexels.com/photos/207684/pexels-photo-207684.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
-                    </div>
-                    <div className="text-center space-y-3 text-orange-700 mt-4">
-                        <h2 className="">{}</h2>
-                        <p> XYZ collage</p>
-                        <p> Admission Date : June 2023</p>
-                        <p>Cultural Night, Tech Symposium, Sports Meet</p>
-                        <p>Cricket, Badminton, Table Tennis</p>
-
-                        <button className="btn btn-info">View Details</button>
-                        
-
-
-                    </div>
-                </div>
-                <div className="border p-6 rounded-2xl  shadow-lg bg-cyan-300">
-                    <div>
-                        <img className="w-56 h-56 rounded-xl border-4 mx-auto" src="https://images.pexels.com/photos/207684/pexels-photo-207684.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
-                    </div>
-                    <div className="text-center space-y-3 text-orange-700 mt-4">
-                        <h2 className="">{}</h2>
-                        <p> XYZ collage</p>
-                        <p> Admission Date : June 2023</p>
-                        <p>Cultural Night, Tech Symposium, Sports Meet</p>
-                        <p>Cricket, Badminton, Table Tennis</p>
-                        
-
-
-                    </div>
-                </div>
-                <div className="border p-6 rounded-2xl  shadow-lg bg-cyan-300">
-                    <div>
-                        <img className="w-56 h-56 rounded-xl border-4 mx-auto" src="https://images.pexels.com/photos/207684/pexels-photo-207684.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
-                    </div>
-                    <div className="text-center space-y-3 text-orange-700 mt-4">
-                        <h2 className="">{}</h2>
-                        <p> XYZ collage</p>
-                        <p> Admission Date : June 2023</p>
-                        <p>Cultural Night, Tech Symposium, Sports Meet</p>
-                        <p>Cricket, Badminton, Table Tennis</p>
-                        
-
-
-                    </div>
-                </div>
+            {
+                collage.map((item, index )=> <SingleCollageCard
+                key={index}
+                item={item}
+                ></SingleCollageCard>)
+            }
             </div>
         </div>
     );

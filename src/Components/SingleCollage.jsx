@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const SingleCollage = ({collage}) => {
     return (
-        <div className="border p-6 rounded-2xl  shadow-lg bg-cyan-300">
+        <div className="border p-6 rounded-2xl  shadow-lg ">
             <div>
                 <img className="w-56 h-56 rounded-xl border-4 mx-auto" src={collage.collage_image} alt="" />
             </div>

@@ -27,55 +27,55 @@ const Admission = () => {
     };
     return (
         <div className="container mx-auto my-4">
-            <h1 className="text-center text-2xl font-bold mb-4">College Admission</h1>
-            <div className="college-list">
+            <h1 className="text-center text-4xl font-bold mb-4 ">College Admission</h1>
+            <div className="college-list text-center">
                 {/* Display college names here */}
-                <p>
+                <p className=" text-red-200 text-2xl font-bold">
                     <button
-                        className="underline text-blue-500"
-                        onClick={() => handleCollegeClick("College Name 1")}
+                        
+                        onClick={() => handleCollegeClick("University of ABC")}
                     >
-                        College Name 1
+                        University of ABC
                     </button>
                 </p>
-                <p>
+                <p className=" text-red-200 text-2xl font-bold">
                     <button
-                        className="underline text-blue-500"
-                        onClick={() => handleCollegeClick("College Name 2")}
+                        
+                        onClick={() => handleCollegeClick("XYZ College")}
                     >
-                        College Name 2
+                        XYZ College
                     </button>
                 </p>
-                <p>
+                <p className=" text-red-200 text-2xl font-bold">
                     <button
-                        className="underline text-blue-500"
-                        onClick={() => handleCollegeClick("College Name 1")}
+                        
+                        onClick={() => handleCollegeClick("ABC State University")}
                     >
-                        College Name 1
+                        ABC State University
                     </button>
                 </p>
-                <p>
+                <p className=" text-red-200 text-2xl font-bold">
                     <button
-                        className="underline text-blue-500"
-                        onClick={() => handleCollegeClick("College Name 2")}
+                        
+                        onClick={() => handleCollegeClick("University of DEF")}
                     >
-                        College Name 2
+                        University of DEF
                     </button>
                 </p>
-                <p>
+                <p className=" text-red-200 text-2xl font-bold">
                     <button
-                        className="underline text-blue-500"
-                        onClick={() => handleCollegeClick("College Name 1")}
+                        
+                        onClick={() => handleCollegeClick("PQR Institute of Technology")}
                     >
-                        College Name 1
+                        PQR Institute of Technology
                     </button>
                 </p>
-                <p>
+                <p className=" text-red-200 text-2xl font-bold">
                     <button
-                        className="underline text-blue-500"
-                        onClick={() => handleCollegeClick("College Name 2")}
+                        
+                        onClick={() => handleCollegeClick("LMN Research Center")}
                     >
-                        College Name 2
+                        LMN Research Center
                     </button>
                 </p>
                 {/* Add more colleges as needed */}

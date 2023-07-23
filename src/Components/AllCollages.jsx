@@ -7,7 +7,7 @@ const AllCollages = () => {
     const [collages, setCollages] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/collages')
+        fetch(' https://collage-bookings-server.vercel.app/collages')
             .then(res => res.json())
             .then(data => setCollages(data))
 

@@ -10,7 +10,7 @@ const Navbar = () => {
 
     const navigate = useNavigate()
     const { logOut, user } = useContext(AuthContext)
-   
+
     const handleLogOut = () => {
         logOut()
             .then(() => {
@@ -37,7 +37,7 @@ const Navbar = () => {
                         <li><Link to="/myCollages">My Collage</Link></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">FindCollage</a>
+                <a className="btn btn-ghost normal-case text-2xl font-bold">FindCollage</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -48,15 +48,15 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-            
-            {user?.email ? <>
-           
-            <li className="font-bold text-sky-500"><button onClick={handleLogOut}>Log out</button></li>
-            <li className="font-bold text-sky-500">{user?.displayName}</li>
 
-        </>
-            : <li className="font-bold text-sky-500"> <Link to="/login">Login</Link> </li>
-        }
+                {user?.email ? <>
+                    <li className="font-bold text-sky-500 px-4"><Link to="/profile">{user?.displayName}</Link></li>
+                    <li className="font-bold text-white btn btn-info px-4"><button onClick={handleLogOut}>Log out</button></li>
+
+
+                </>
+                    : <li className="font-bold text-white btn btn-info"> <Link to="/login">Login</Link> </li>
+                }
             </div>
         </div>
     );

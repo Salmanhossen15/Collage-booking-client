@@ -23,7 +23,7 @@ const Gallery = () => {
         <div className="container mx-auto py-8">
 
             <div>
-                <h2 className="font-bold text-4xl text-center my-6">Visit Our Collages gallery</h2>
+                <h2 className="text-center my-12 font-bold text-cyan-400 text-5xl">Visit Our Collages gallery</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {images.map((imageUrl, index) => (

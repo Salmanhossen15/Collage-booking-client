@@ -1,6 +1,52 @@
 
 
 const Research = () => {
+
+    const research = [
+        {
+            "id": 1,
+            "college_name": "University of ABC",
+            "research_name": "Advancements in Renewable Energy",
+            "research_link": "https://example.com/research-abc",
+            "research_image": "https://images.pexels.com/photos/3825539/pexels-photo-3825539.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        },
+        {
+            "id": 2,
+            "college_name": "XYZ College",
+            "research_name": "AI and its Impact on Society",
+            "research_link": "https://example.com/research-xyz",
+            "research_image": "https://images.pexels.com/photos/5726693/pexels-photo-5726693.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        },
+        {
+            "id": 3,
+            "college_name": "ABC State University",
+            "research_name": "The Future of Space Exploration",
+            "research_link": "https://example.com/research-space",
+            "research_image": "https://images.pexels.com/photos/3825560/pexels-photo-3825560.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        },
+        {
+            "id": 4,
+            "college_name": "University of DEF",
+            "research_name": "Climate Change Mitigation Strategies",
+            "research_link": "https://example.com/research-def",
+            "research_image": "https://images.pexels.com/photos/3825559/pexels-photo-3825559.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        },
+        {
+            "id": 5,
+            "college_name": "PQR Institute of Technology",
+            "research_name": "Machine Learning for Healthcare",
+            "research_link": "https://example.com/research-pqr",
+            "research_image": "https://images.pexels.com/photos/9431442/pexels-photo-9431442.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        },
+        {
+            "id": 6,
+            "college_name": "LMN Research Center",
+            "research_name": "Advances in Quantum Computing",
+            "research_link": "https://example.com/research-lmn",
+            "research_image": "https://images.pexels.com/photos/5553061/pexels-photo-5553061.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        }
+    ]
+
     return (
         // <div >
         //     <h2 className="font-bold text-4xl text-center my-6">Popular Research Links That We Recommended To You</h2>
@@ -29,55 +75,24 @@ const Research = () => {
         // </div>
         <div className="py-10">
 
-            <h2 className="font-bold text-4xl text-center my-6">Popular Research Links That We Recommended To You</h2>
+            <h2 className="text-center my-12 font-bold text-cyan-400 text-5xl ">Popular Research Links That We Recommended To You</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="border p-6 rounded-2xl  shadow-lg ">
-                    <div>
-                        <img className="w-56 h-56 rounded-xl border-4 mx-auto" src="https://images.pexels.com/photos/3825569/pexels-photo-3825569.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
-                    </div>
-                    <div className="text-center space-y-3 text-orange-700 mt-4">
-                        <h2 className="">{ }</h2>
-                        <p> XYZ collage</p>
-                        <p> Admission Date : June 2023</p>
-                        <p>Cultural Night, Tech Symposium, Sports Meet</p>
-                        <p>Cricket, Badminton, Table Tennis</p>
-
-                        <button className="btn btn-info">View Details</button>
-
-
-
-                    </div>
-                </div>
-                <div className="border p-6 rounded-2xl  shadow-lg ">
-                    <div>
-                        <img className="w-56 h-56 rounded-xl border-4 mx-auto" src="https://images.pexels.com/photos/207684/pexels-photo-207684.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
-                    </div>
-                    <div className="text-center space-y-3 text-orange-700 mt-4">
-                        <h2 className="">{ }</h2>
-                        <p> XYZ collage</p>
-                        <p> Admission Date : June 2023</p>
-                        <p>Cultural Night, Tech Symposium, Sports Meet</p>
-                        <p>Cricket, Badminton, Table Tennis</p>
-
-
-
-                    </div>
-                </div>
-                <div className="border p-6 rounded-2xl  shadow-lg ">
-                    <div>
-                        <img className="w-56 h-56 rounded-xl border-4 mx-auto" src="https://images.pexels.com/photos/3825560/pexels-photo-3825560.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
-                    </div>
-                    <div className="text-center space-y-3 text-orange-700 mt-4">
-                        <h2 className="">{ }</h2>
-                        <p> XYZ collage</p>
-                        <p> Admission Date : June 2023</p>
-                        <p>Cultural Night, Tech Symposium, Sports Meet</p>
-                        <p>Cricket, Badminton, Table Tennis</p>
-
-
-
-                    </div>
-                </div>
+                {
+                    research.map(({ id, college_name, research_name, research_link, research_image }) => (
+                        <div key={id} className="border p-6 rounded-2xl  shadow-lg ">
+                            <div>
+                                <img className="w-56 h-56 rounded-xl border-4 mx-auto" src={research_image} alt="" />
+                            </div>
+                            <div className="text-center space-y-3 text-orange-700 mt-4">
+                                <h2 className="">{college_name}</h2>
+                                <p> {research_name}</p>
+                                <p>{research_link}</p>
+                                
+                            </div>
+                        </div>
+                    ))
+                }
+                
             </div>
         </div>
     );
