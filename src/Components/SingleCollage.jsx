@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const SingleCollage = ({collage}) => {
@@ -11,8 +12,7 @@ const SingleCollage = ({collage}) => {
                 <p> Ratings:{collage.collage_rating}</p>
                 <p> Admission Date : {collage.admission_dates}</p>
                 <p>Number of research : {collage.research}</p>
-                <button  className="btn btn-info">View Details</button>
-
+                <Link to={`/details/${collage._id}`}><button className='btn bg-sky-500'>View Details</button></Link>
 
             </div>
         </div>

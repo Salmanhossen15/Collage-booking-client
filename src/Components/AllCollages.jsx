@@ -7,7 +7,7 @@ const AllCollages = () => {
     const [collages, setCollages] = useState([]);
 
     useEffect(() => {
-        fetch('data.json')
+        fetch('http://localhost:5000/collages')
             .then(res => res.json())
             .then(data => setCollages(data))
 

@@ -11,6 +11,7 @@ import ErrorPage from "../Components/ErrorPage";
 import Login from "../Login/Login";
 import SignUp from "../SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
+import Details from "../Components/Details";
 
  export const router = createBrowserRouter([
     {
@@ -41,6 +42,10 @@ import PrivateRoute from "./PrivateRoute";
           path:"signUp",
           element:<SignUp></SignUp>
         },
+        {
+          path:"details/:id",
+          element:<Details></Details>
+        }
         
       ]
     },
