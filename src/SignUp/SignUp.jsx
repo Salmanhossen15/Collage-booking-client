@@ -1,14 +1,16 @@
 
-import { Link, Navigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../provider/AuthProvider";
 import { useContext } from "react";
+import SocialLogin from "../Login/SocialLogin";
 
 
 
 const SignUp = () => {
 
     const{createUser} = useContext(AuthContext);
+    const navigate = useNavigate()
 
     const handleSignUp = event => {
         event.preventDefault();
@@ -29,7 +31,7 @@ const SignUp = () => {
                     'Created Account Successfully!',
                     'success'
                 )
-                Navigate("/")
+                navigate("/")
             })
             .catch(error => console.log(error))
 
@@ -73,7 +75,7 @@ const SignUp = () => {
                     <button className="btn bg-sky-600">Create an account</button>
                 </div>
                 <p className='text-center'>Already have an account? <Link to='/login' className='text-sky-500 underline'>Login</Link></p>
-
+                <SocialLogin></SocialLogin>
             </form>
         </div>
     );

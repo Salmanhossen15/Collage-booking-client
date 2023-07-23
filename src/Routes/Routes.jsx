@@ -10,6 +10,7 @@ import MyCollages from "../Components/MyCollages";
 import ErrorPage from "../Components/ErrorPage";
 import Login from "../Login/Login";
 import SignUp from "../SignUp/SignUp";
+import PrivateRoute from "./PrivateRoute";
 
  export const router = createBrowserRouter([
     {
@@ -26,11 +27,11 @@ import SignUp from "../SignUp/SignUp";
         },
         {
             path:"admission",
-            element: <Admission></Admission>
+            element: <PrivateRoute><Admission></Admission></PrivateRoute>
         },
         {
             path:"myCollages",
-            element:<MyCollages></MyCollages> 
+            element:<PrivateRoute><MyCollages></MyCollages> </PrivateRoute>
         },
         {
           path:"login",

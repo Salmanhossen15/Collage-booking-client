@@ -1,12 +1,14 @@
 
 import { useContext } from 'react';
-import { Link, Navigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
 import Swal from 'sweetalert2';
+import SocialLogin from './SocialLogin';
 
 const Login = () => {
 
     const{ signIn } = useContext(AuthContext);
+    const navigate = useNavigate()
 
     const handleLogin = event => {
         event.preventDefault();
@@ -23,7 +25,7 @@ const Login = () => {
                     'User Log in Successfully!',
                     'success'
                 )
-                Navigate(form, { replace: true })
+                navigate("/")
 
             })
             .catch((error) => {
@@ -61,7 +63,7 @@ const Login = () => {
                     <button className="btn bg-sky-500">Login</button>
                 </div>
                 <p className='text-center'>Dont have an account? <Link to="/signUp" className='text-sky-500 underline'>Create an account</Link></p>
-                {/* <SocialLogin></SocialLogin> */}
+                <SocialLogin></SocialLogin>
             </form>
         </div>
     );

@@ -1,0 +1,158 @@
+[
+    {
+      "collage_image": "https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "collage_name": "ABC University",
+      "collage_id": 1,
+      "collage_rating":4.5,
+      "admission_dates": "August 2023",
+      "research": 4,
+      "events": ["Freshers' Party", "Annual Fest", "Tech Expo"],
+      "research_history": "Founded in 1950, ABC University has a rich history of groundbreaking research.",
+      "sports": ["Football", "Basketball", "Swimming"],
+      "admission_process": "Admission is through an online application followed by an entrance exam and interview.",
+      "events_details": {
+        "Freshers' Party": "Welcoming event for new students.",
+        "Annual Fest": "A grand celebration of talents from all across the university.",
+        "Tech Expo": "Showcasing innovative projects and technology advancements."
+      },
+      "research_works": {
+        "Year 2020": "Discovered a new species of marine life.",
+        "Year 2018": "Developed a breakthrough in renewable energy technology.",
+        "Year 2015": "Published a widely acclaimed research paper on climate change."
+      },
+      "sports_categories": {
+        "Team Sports": ["Football", "Basketball", "Volleyball"],
+        "Individual Sports": ["Swimming", "Tennis", "Athletics"]
+      }
+    },
+    {
+      "collage_image": "https://images.pexels.com/photos/207684/pexels-photo-207684.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "collage_name": "XYZ collage",
+      "collage_id": 2,
+      "collage_rating":4.5,
+      "admission_dates": "June 2023",
+      "research": 4,
+      "events": ["Cultural Night", "Tech Symposium", "Sports Meet"],
+      "research_history": "Established in 1978, XYZ collage has been a pioneer in various research domains.",
+      "sports": ["Cricket", "Badminton", "Table Tennis"],
+      "admission_process": "Admission is based on merit and performance in the entrance exam.",
+      "events_details": {
+        "Cultural Night": "A night full of cultural performances from students showcasing their talents.",
+        "Tech Symposium": "An event to discuss the latest advancements in technology.",
+        "Sports Meet": "A competitive sports event bringing out the best athletes from the collage."
+      },
+      "research_works": {
+        "Year 2019": "Published a significant research paper in the field of medicine.",
+        "Year 2016": "Developed a novel algorithm for data encryption.",
+        "Year 2014": "Conducted research on sustainable agriculture practices."
+      },
+      "sports_categories": {
+        "Team Sports": ["Cricket", "Football", "Hockey"],
+        "Individual Sports": ["Badminton", "Table Tennis", "Swimming"]
+      }
+    },
+    {
+      "collage_image": "https://images.pexels.com/photos/207729/pexels-photo-207729.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "collage_name": "PQR Institute",
+      "collage_id": 3,
+      "collage_rating":4.5,
+      "admission_dates": "July 2023",
+      "research": 4,
+      "events": ["Art Exhibition", "Science Conference", "Literary Fest"],
+      "research_history": "PQR Institute, founded in 1995, has been at the forefront of scientific discoveries.",
+      "sports": ["Chess", "Archery", "Gymnastics"],
+      "admission_process": "Admission is through a rigorous entrance exam followed by a personal interview.",
+      "events_details": {
+        "Art Exhibition": "Showcasing the creativity and artistic talents of students.",
+        "Science Conference": "Bringing together experts to discuss the latest scientific breakthroughs.",
+        "Literary Fest": "Celebrating the love for literature with various activities and competitions."
+      },
+      "research_works": {
+        "Year 2022": "Discovered a new exoplanet with potential habitability.",
+        "Year 2017": "Published a groundbreaking paper on artificial intelligence.",
+        "Year 2013": "Conducted research on the impact of climate change on local ecosystems."
+      },
+      "sports_categories": {
+        "Mind Sports": ["Chess", "Sudoku", "Puzzles"],
+        "Precision Sports": ["Archery", "Shooting", "Darts"]
+      }
+    },
+    {
+      "collage_image": "https://images.pexels.com/photos/2566121/pexels-photo-2566121.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "collage_name": "LMN University",
+      "collage_id": 4,
+      "collage_rating":4.5,
+      "admission_dates": "May 2023",
+      "research": 6,
+      "events": ["Music Fest", "Startup Summit", "Sports Carnival"],
+      "research_history": "LMN University, established in 1965, has a legacy of pioneering research in various fields.",
+      "sports": ["Tennis", "Swimming", "Athletics"],
+      "admission_process": "Admission is based on academic performance and a written test.",
+      "events_details": {
+        "Music Fest": "A musical extravaganza showcasing the talents of student musicians.",
+        "Startup Summit": "Bringing aspiring entrepreneurs together to pitch their ideas to investors.",
+        "Sports Carnival": "A week-long celebration of various sports events and competitions."
+      },
+      "research_works": {
+        "Year 2021": "Developed a new vaccine delivery method.",
+        "Year 2019": "Published a significant study on the effects of social media on mental health.",
+        "Year 2014": "Conducted research on sustainable urban planning."
+      },
+      "sports_categories": {
+        "Racquet Sports": ["Tennis", "Badminton", "Squash"],
+        "Water Sports": ["Swimming", "Water Polo", "Rowing"]
+      }
+    },
+    {
+      "collage_image": "https://images.pexels.com/photos/159490/yale-university-landscape-universities-schools-159490.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "collage_name": "EFG collage",
+      "collage_id": 5,
+      "collage_rating":4.5,
+      "admission_dates": "April 2023",
+      "events": ["Dance Competition", "Science Fair", "Literary Symposium"],
+      "research_history": "EFG collage, founded in 1982, has been a hub of innovation and research excellence.",
+      "sports": ["Volleyball", "Basketball", "Cricket"],
+      "admission_process": "Admission is through a combination of academic scores and extracurricular achievements.",
+      "events_details": {
+        "Dance Competition": "A vibrant dance competition showcasing various dance styles.",
+        "Science Fair": "A platform for students to present their scientific projects and inventions.",
+        "Literary Symposium": "Engaging discussions on literary themes and works."
+      },
+      "research_works": {
+        "Year 2020": "Discovered a new species of plants in a remote rainforest.",
+        "Year 2018": "Published a significant paper on the applications of nanotechnology.",
+        "Year 2015": "Conducted research on the effects of pollution on marine life."
+      },
+      "sports_categories": {
+        "Team Sports": ["Volleyball", "Basketball", "Handball"],
+        "Bat-and-Ball Sports": ["Cricket", "Baseball", "Softball"]
+      }
+    },
+    {
+      "collage_image": "https://images.pexels.com/photos/2982449/pexels-photo-2982449.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "collage_name": "HIJ Institute",
+      "collage_id": 6,
+      "collage_rating":4.5,
+      "admission_dates": "September 2023",
+      "research": 4,
+      "events": ["Theater Festival", "Tech Hackathon", "Athletics Meet"],
+      "research_history": "HIJ Institute, established in 2000, has been a driving force in cutting-edge research.",
+      "sports": ["Athletics", "Football", "Table Tennis"],
+      "admission_process": "Admission is through a national-level entrance exam and a group discussion.",
+      "events_details": {
+        "Theater Festival": "A celebration of theatrical performances and dramatic arts.",
+        "Tech Hackathon": "A 24-hour coding competition to develop innovative tech solutions.",
+        "Athletics Meet": "An event to showcase the athletic talents of students."
+      },
+      "research_works": {
+        "Year 2021": "Developed a revolutionary medical device for remote health monitoring.",
+        "Year 2017": "Published a groundbreaking research paper on artificial intelligence.",
+        "Year 2012": "Conducted research on renewable energy sources."
+      },
+      "sports_categories": {
+        "Track Events": ["Athletics", "Sprinting", "Hurdles"],
+        "Ball Sports": ["Football", "Basketball", "Handball"]
+      }
+    }
+  ]
+  

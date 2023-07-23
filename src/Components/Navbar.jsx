@@ -1,15 +1,28 @@
-// import { useContext } from "react";
-import { Link } from "react-router-dom";
-// import { AuthContext } from "../provider/AuthProvider";
+
+import { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import { AuthContext } from "../provider/AuthProvider";
+
 
 
 const Navbar = () => {
-    // const { logOut } = useContext(AuthContext);
-    // const handleLogOut = () => {
-    //     logOut()
-    //         .then(() => { })
-    //         .catch(error => console.log(error));
-    // }
+
+    const navigate = useNavigate()
+    const { logOut, user } = useContext(AuthContext)
+   
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                Swal.fire(
+                    'Ok!',
+                    'User Logged Out Successfully!',
+                    'success'
+                )
+                navigate('/');
+            })
+            .catch(error => console.log(error))
+    }
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -35,7 +48,15 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-            <li><Link to="/login">Login</Link></li>
+            
+            {user?.email ? <>
+           
+            <li className="font-bold text-sky-500"><button onClick={handleLogOut}>Log out</button></li>
+            <li className="font-bold text-sky-500">{user?.displayName}</li>
+
+        </>
+            : <li className="font-bold text-sky-500"> <Link to="/login">Login</Link> </li>
+        }
             </div>
         </div>
     );
