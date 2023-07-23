@@ -16,6 +16,8 @@ const CollageCard = () => {
                         <p> Admission Date : June 2023</p>
                         <p>Cultural Night, Tech Symposium, Sports Meet</p>
                         <p>Cricket, Badminton, Table Tennis</p>
+
+                        <button className="btn btn-info">View Details</button>
                         
 
 
