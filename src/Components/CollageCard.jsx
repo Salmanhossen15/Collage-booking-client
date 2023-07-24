@@ -12,7 +12,7 @@ const CollageCard = () => {
             .then((data) => setCollage(data));
     }, []);
 
-    console.log(collage);
+    
     return (
         <div className="py-10">
             
